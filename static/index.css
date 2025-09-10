@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+@font-face {
+  font-family: 'Austin';
+  src: url('AustinCyr-Roman.woff2') format('woff2'),
+       url('AustinCyr-Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Adobe Garamond Pro';
+  src: url('AGaramondPro-Regular.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #080808;
+  --second-bg-color: #131313;
+  --text-color: white;
+  --main-color: #474449; 
+}
+
+body {
+  position: relative; 
+  background-image: url('sign.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center;
+  min-height: 100vh; /* Allow the body to grow */
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(55, 52, 52, 0.273);
+  z-index: -1;
+}
+
+h1 {
+  font-size: 150px;
+  color: rgb(227, 224, 224);
+  font-family: 'Times New Roman', sans-serif;
+  font-weight: 590;
+  letter-spacing: 25px; 
+  margin-top: 80px; /* Moves the h1 down */
+  margin-bottom: 20px; /* Adjust spacing below the h1 */
+}
+
+h4 {
+  font-size: 21px;
+  color: rgb(192, 184, 184);
+  font-family: 'Times New Roman', serif;
+  font-weight: 550;
+  word-spacing: 110px;
+  letter-spacing: 2px; 
+  padding-right: 5%;
+  margin-top: -20px; /* Reduced margin to move it upwards */
+  margin-bottom: 8px;
+}
+
+
+.title {
+  padding-bottom: 40%;
+  position: relative;
+}
+
+.box-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+}
+
+.box {
+  background-color: rgb(9, 9, 9);
+  border-radius: 25px;
+  padding: 100px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  color: white;
+  width: 92%;
+  margin: auto;
+}
+
+p {
+  font-family: 'Adobe Garamond Pro', serif;
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+}
+
+.p-one{
+  margin-top: -60px;
+  text-align: center;
+}
+p.about-content{
+  font-style: normal;
+  line-height: 1.7rem;
+  font-size: 1.4rem;
+  margin: 10px 0px;
+  text-align: justify;
+}
+
+.inner-box {
+  background: #a8a8a85b;;
+  border-radius: 35px;
+  padding: 65px; /* Inner padding */
+  margin-top: 30px; /* Space from the top content */
+  color: white; /* Text color */
+  text-align: justify; /* Justify text for better readability */
+  font-family: 'EB Garamond', serif;
+  font-size: 17px;
+  line-height: 1.3; /* Line spacing for better readability */
+  width: 57%; /* Inner box width */
+  margin: 117px 0px 0px -40px; /* Center the inner box inside the outer box */
+}
+
+.about-section h2 {
+  font-family: 'Austin', serif;
+  font-size: 8rem;
+  line-height: 1;
+  font-weight: 300; 
+  color: white; /* White text color */
+  text-transform: uppercase; /* Uppercase styling */
+  text-align: center; /* Center alignment */
+  margin-top: -23rem; /* Space above the heading */
+  margin-bottom: 8rem; /* Space below the heading */
+  padding: 0px 0px 0px 720px;
+  letter-spacing: 5px;
+}
+
+
+.about-section2 {
+  display: flex; /* Enables side-by-side layout */
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Add space between the items */
+  gap: 20px; /* Optional spacing between h2 and the inner box */
+  margin-top: 50px; /* Space from the top */
+  padding: 0 40px; /* Adjust padding for better alignment */
+}
+
+h2.h2-two {
+  font-family: 'Austin', serif;
+  font-size: 8rem;
+  line-height: 1;
+  font-weight: 300;
+  color: white; /* White text color */
+  text-transform: uppercase; /* Uppercase styling */
+  text-align: left; /* Align the text to the left */
+  margin: 0; /* Remove default margins */
+  width: 40%; /* Control width for proper alignment */
+  letter-spacing: 5px;
+  margin-top: 50px;
+}
+
+.inner-box2 {
+  background: #a8a8a85b;
+  border-radius: 35px;
+  padding: 70px; /* Inner padding */
+  color: white; /* Text color */
+  text-align: justify; /* Justify text for better readability */
+  font-family: 'EB Garamond', serif;
+  font-size: 17px;
+  line-height: 1.6 ; /* Line spacing for better readability */
+  width: 59%; /* Control the width for a balanced layout */
+  margin: 0px -75px 0px 0px; /* Center the inner box inside the outer box */
+}
+
+p.about-content2 {
+  margin: 6px 0; /* Added consistent spacing between lines */
+  font-style: normal; /* Ensures clean, readable text */
+  font-size: 1.4rem; /* Match font size with the first box */
+  line-height: 1.2; /* Reduced line spacing */
+  letter-spacing: normal; /* Remove any extra letter spacing */
+  text-align: justify; /* Justify alignment for a polished look */
+} 
+
+.significance{
+  margin-top: 200px;
+  font-size: 30px;
+  color: rgba(234, 240, 247, 0.818);
+  font-style: normal;
+  font-family: 'Adobe Garamond Pro', serif; ;
+}
+.significance p{
+  margin-top: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 80px;
+  text-align: justify;
+  color: #f4eef8;
+}
+
+.line-one, .line-two {
+  width: 50%; /* Adjust the width to reduce the line length */
+  margin: 10px auto; /* Center the line horizontally and add spacing */
+  border: none; /* Remove default border */
+}
+
+.line-one {
+  border-top: 2px solid #bab3b3; /* Solid line */
+}
+
+.line-two {
+  border-top: 2px dashed #c1b2b2; /* Dashed line */
+}
+
+.significance li {
+  margin-bottom: -60px; /* Space between each point */
+  line-height: 1.2; /* Space between lines for clarity */
+  font-size: 18px;
+  margin-top: 80px;
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: justify;
+}
+li.i{
+  color: #ded9e1;
+}
+
+.significance li:last-child {
+  margin-bottom: 80px; /* Adds space below the last list item */
+}
+.boxes-section {
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Distribute boxes evenly */
+  gap: 10px; /* Space between the boxes */
+  margin-top: 80px; /* Space from previous section */
+  padding: 0px; /* Padding around the boxes section */
+  margin-bottom: 50px;
+  align-items: center;
+  margin-left: 170px;
+  width: 100%;
+}
+
+.black-box {
+  background-color: rgba(0, 0, 0, 0.91); /* Box color */
+  color: white; /* Txt color */
+  border-radius: 25px; /* Rounded corners */
+  padding: 180px; /* Inner padding */
+  width: 30%; /* Control width of the boxes */
+  text-align: center; /* Center text inside the box */
+  height: 500px;
+  justify-content: center;
+  display: flex; /* Flexbox for centering content */
+  flex-direction: column; /* Stack the content vertically */
+  align-items: center; /* Center content horizontally */
+  transition: transform 0.3s ease;
+}
+
+.boxes-section .black-box:nth-child(2) {
+  background-color: #7c7675; /* New color for the middle Detect box */
+}
+
+.black-box:hover {
+  transform: scale(1.05); /* Slightly enlarge the box when hovered */
+}
+
+.black-box h3 {
+  font-size: 24px; /* Box title size */
+  margin-bottom: 20px; /* Space below the title */
+  text-align: center;
+  width: auto;
+  white-space: nowrap; /* Prevent the text from wrapping to a new line */
+}
+
+.black-box p {
+  font-size: 15px; /* Content font size */
+  line-height: 1.5;
+  white-space: nowrap; /* Prevent wrapping of text */
+  overflow: visible; /* Hide any overflow if the text is too long */
+  width: auto; /* Ensure paragraph spans the full width of the box */
+  text-align: center; /* Center the text */
+  justify-content: center;
+  align-items: center;
+  color: #908995;
+}
+
+.footer-box {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #222222; /* Dark background color */
+  color: white; /* Text color */
+  text-align: center;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for the footer box */
+  position: relative;
+  bottom: 0;
+  margin-top: auto;
+  border-radius: 30px;
+}
+
+.footer-content {
+  max-width: 1200px; /* Optional: Control the width of the content inside */
+  margin: 0 auto; /* Center content horizontally */
+  padding: 0 20px;
+}
+
+.footer-box p {
+  margin: 5px 0;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-box p:first-child {
+  font-weight: bold;
+}
